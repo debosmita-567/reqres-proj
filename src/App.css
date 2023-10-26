@@ -1,4 +1,4 @@
-.App {
+/* .App {
   font-family: sans-serif;
   text-align: center;
   margin: 1%;
@@ -28,4 +28,186 @@ td {
 }
 .delete-btn{
   margin: 2%;
+} */
+
+/* App.css */
+
+/* Reset some default styles to ensure consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+/* Style the search input */
+.searchDiv input[type="search"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Style the create user form */
+form {
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style table headers */
+th {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  padding: 15px 10px;
+  text-align: left;
+}
+
+/* Style table rows */
+tr {
+  background-color: #fff;
+}
+
+/* Style table cells */
+td {
+  padding: 15px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Add hover effect on table rows */
+tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Style buttons */
+.edit-btn,
+.delete-btn {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Make the table responsive for mobile devices
+@media screen and (max-width: 600px) {
+  table {
+    border: none;
+    overflow-x: auto;
+  }
+
+  th, td {
+    min-width: 120px;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  table {
+    border: none;
+    overflow-x: auto;
+  }
+
+  th, td {
+    min-width: 120px;
+  }
+
+  /* Display table rows vertically on mobile screens */
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  /* Adjust table header styles for mobile view */
+  th {
+    display: none; /* Hide the header cells */
+  }
+
+  /* Adjust table cell styles */
+  td {
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: none;
+  }
 }
